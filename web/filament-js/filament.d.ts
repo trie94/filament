@@ -143,6 +143,8 @@ export interface View$VignetteOptions {
     enabled?: boolean;
 }
 
+export function fitIntoUnitCube(box: Aabb): mat4;
+
 // Clients should use the [PixelBuffer/CompressedPixelBuffer] helper function to contruct PixelBufferDescriptor objects.
 export class driver$PixelBufferDescriptor {
     constructor(byteLength: number, format: PixelDataFormat, datatype: PixelDataType);
